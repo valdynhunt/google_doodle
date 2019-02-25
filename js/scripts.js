@@ -9,4 +9,5 @@ console.log( randNum );
 // Click Event
 $('#stage').click( function(){
     $('body').addClass('color' + randNum);
+    $('#stage').addClass('moveme');
 });
