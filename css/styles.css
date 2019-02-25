@@ -12,16 +12,16 @@
 }
 
 .color0 path{
- fill: blue;
+ fill: rgb(251, 203, 67);
 
 }
 
 .color1 path{
-fill: brown;
+fill: rgb(53, 124, 244);
 }
 
 .color2 path{
-  fill: grey;
+  fill: rgb(13, 169, 96);
 }
 
 #googledrive {
