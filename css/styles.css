@@ -1,5 +1,6 @@
 
 /* External styling for stage from: https://codepen.io/manikoth/pen/NNNBYe.css
+   Animation "flip" from https://github.com/daneden/animate.css/blob/master/animate.css
  */
 
 /* Doodle Stage */
@@ -10,22 +11,17 @@
 	font-size: 16px;
 }
 
-.color0 {
- color: blue;
+.color0 path{
+ fill: blue;
 
 }
 
-.color1 {
-color: brown;
+.color1 path{
+fill: brown;
 }
 
-.color2 {
-  color: grey;
-}
-
-.moveme {
-  transform: translate(0px, 50px);
-  transition: transform 2s 2s;
+.color2 path{
+  fill: grey;
 }
 
 #googledrive {
@@ -92,7 +88,7 @@ h2 {
   transition: left 1.5s 2s, opacity 2s 8s;
 }
 
-#gdrive.icon {
+#gdrive {
   height: 15%;
   width: 15%;
   position: absolute;
@@ -422,3 +418,52 @@ h2 {
   animation-play-state: running;
 }
 
+#gdrive.moveme {
+  animation: flip 2s;
+}
+
+
+@keyframes flip {
+  0% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+      rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+      rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
