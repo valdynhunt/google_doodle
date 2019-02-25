@@ -1,12 +1,406 @@
-/*
-  DIAGNOSTIC STYLING
-*/
-body {
-  background: gray;
-}
+
+/* External styling for stage from: https://codepen.io/manikoth/pen/NNNBYe.css
+ */
+
+/* Doodle Stage */
 
 * {
-  outline: 1px dotted black;
+	font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 400;
+	font-size: 16px;
 }
 
-/* Your Awesome Scripts */
+#googledrive {
+
+/*   Wanted to use Product Sans for the second word in Google Drive, but it is a 
+bespoke font and cannot be used, so I just did a similar affect with what I had  */
+  
+  font-size: 36px;
+  font-weight: 200px;
+  letter-spacing: 1px;
+}
+
+.second {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#stage {
+  outline: 0px dotted red;
+
+ /* fixed sizes */
+  height: 450px;
+  width: 750px;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon {
+  height: 13%;
+  width: 13%;
+}
+
+/* first */
+h1 {
+  position: absolute;
+  left: -440px;
+  top: 20px;
+  width: 750px;
+  height: 400px;
+  
+  transition: left 1.5s 2s, opacity 2s 8s;
+}
+
+h2 {
+  position: absolute;
+  font-size: 2.3em;
+  left: 310px;
+  top: 80px;
+  width: 750px;
+  height: 400px;
+  opacity: 0;
+  
+  transition: opacity 3s 11s;
+ }
+
+#cloud.icon {
+  height: 15%;
+  width: 15%;
+  position: absolute;
+  left: -150px;
+  top: 100px;
+  opacity: 1;
+  
+  transition: left 1.5s 2s, opacity 2s 8s;
+}
+
+#gdrive.icon {
+  height: 15%;
+  width: 15%;
+  position: absolute;
+  left: -150px;
+  top: 100px;
+  opacity: 1;
+  
+  transition: left 1.5s 2s, transform 2s 10s;
+}
+
+#server.icon {
+  height: 15%;
+  width: 15%;
+    position: absolute;
+  left: -150px;
+  top: 100px;
+  opacity: 1;
+  
+  transition: left 1.5s 2s, opacity 2s 8s;
+}
+
+#laptop.icon {
+  position: absolute;
+  left: 470px;
+  top: 200px;
+  height: 27%;
+  width: 27%;
+}
+
+#filebox.icon {
+  height: 17%;
+  width: 17%;
+  position: absolute;
+  left: 585px;
+  top: 370px;
+  transition: opacity 1s 7s;
+}
+
+#file.icon {
+  height: 17%;
+  width: 17%;
+  position: absolute;
+  left: 80px;
+  top: 375px;
+  transition: opacity 1s 7s;
+}
+
+#bolt1.icon {
+  position: absolute;
+  left: 400px;
+  top: 150px;
+  opacity: 0;
+  transition: opacity 0.5s 4s;
+}
+
+#bolt2.icon {
+  position: absolute;
+  left: 450px;
+  top: 165px;
+  opacity: 0;
+  transition: opacity 0.5s 3.5s;
+}
+
+#bolt3.icon {
+  position: absolute;
+  left: 500px;
+  top: 180px;
+  opacity: 0;
+  transition: opacity 0.5s 3s;
+}
+
+#doc1.icon {
+  position: absolute;
+  left: 100px;
+  top: 375px;
+  opacity: 1;
+  transition: opacity 1s 4.5s, left 0.5s 0.5s, top 0.5s 0.5s;
+}
+
+#doc2.icon {
+  position: absolute;
+  left: 100px;
+  top: 375px;
+  transition: opacity 1s 5s, left 0.5s 1s, top 0.5s 1s;
+}
+
+#doc3.icon {
+  position: absolute;
+  left: 100px;
+  top: 375px;
+  transition: opacity 1s 5.5s, left 0.5s 1.5s, top 0.5s 1.5s;
+}
+
+#doc4.icon {
+  position: absolute;
+  left: 100px;
+  top: 375px;
+  transition: opacity 1s 6s, left 0.5s 2s, top 0.5s 2s;
+}
+
+#floppy.icon {
+  position: absolute;
+  left: 600px;
+  top: 375px;
+  transition: opacity 1s 5s, left 0.5s 2s;
+}
+
+#music.icon {
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  transition: opacity 1s 4.5s, left 0.7s 1.5s;
+}
+
+#movie.icon {
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  transition: opacity 1s 5s, left 0.7s 2s;
+}
+
+#drive.icon {
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  transition: opacity 1s 6s;
+}
+
+#picture1.icon {
+  position: absolute;
+  left: 600px;
+  top: 375px;
+  transition: opacity 1s 5s, left 0.5s 1.25s;
+}
+
+#picture2.icon {
+  position: absolute;
+  left: 600px;
+  top: 375px;
+  transition: opacity 1s 5.5s, left 0.5s 0.75s;
+}
+
+#picture3.icon {
+  position: absolute;
+  left: 600px;
+  top: 375px;
+  transition: opacity 1s 6s, left 0.5s 1.75s;
+}
+
+#smile.icon {
+  position: absolute;
+  left: 620px;
+  top: 220px;
+  opacity: 0;
+  transition: opacity 2s 4s;
+}
+
+#face.icon {
+  position: absolute;
+  left: 620px;
+  top: 220px;
+  opacity: 1;
+  transition: opacity 2s 4s;
+}
+
+#light.icon {
+  height: 9%;
+  width: 9%;
+  position: absolute;
+  left: 635px;
+  top: 160px;
+  visibility: hidden;
+  transition: visibility 1s 1s, opacity 1s 3s;
+}
+
+/* last */
+#stage:hover h1 {
+  left: 0px;
+  opacity: 0;
+}
+
+#stage:hover #smile.icon {
+  left: 620px;
+  opacity: 1;
+}
+
+#stage:hover #light {
+  visibility: visible;
+  opacity: 0;
+}
+
+#stage:hover #face {
+  opacity: 0;
+}
+
+#stage:hover #cloud {
+  position: absolute;
+  left: 300px;
+  top: 100px;
+  opacity: 0;
+}
+
+#stage:hover #gdrive {
+  left: 150px;
+  transform: scale(1.7);
+}
+
+#stage:hover #server {
+  visibility: visible;
+  left: 0px;
+  top: 100px;
+  opacity: 0;
+}
+
+#stage:hover #doc1 {
+  left: 200px;
+  top: 220px;
+  opacity: 0;
+}
+
+#stage:hover #doc2 {
+  left: 275px;
+  top: 220px;
+  opacity: 0;
+}
+
+#stage:hover #doc3 {
+  left: 350px;
+  top: 220px;
+  opacity: 0;
+}
+
+#stage:hover #doc4 {
+  left: 425px;
+  top: 220px;
+  opacity: 0;
+}
+
+#stage:hover #drive {
+  opacity: 0;
+}
+
+#stage:hover #movie {
+  left: 380px;
+  opacity: 0;
+}
+
+#stage:hover #music {
+  left: 300px;
+  opacity: 0;
+}
+
+#stage:hover #doc4 {
+  opacity: 0;
+}
+
+#stage:hover #picture1 {
+  left: 300px;
+  opacity: 0;
+}
+
+#stage:hover #picture2 {
+  left: 200px;
+  opacity: 0;
+}
+
+#stage:hover #picture3 {
+  left: 400px;
+  opacity: 0;
+}
+
+#stage:hover #floppy {
+  opacity: 0;
+  left: 500px;
+}
+
+#stage:hover #file {
+  opacity: 0;
+}
+
+#stage:hover #filebox {
+  opacity: 0;
+}
+
+#stage:hover h2 {
+  opacity: 1;
+}
+
+@keyframes changeopacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#bolt1 {
+  animation-name: changeopacity;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+  animation-duration: 0.4s;
+  animation-delay: 4s;
+  animation-play-state: paused;
+}
+
+#bolt2 {
+  animation-name: changeopacity;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+  animation-duration: 0.4s;
+  animation-delay: 3.5s;
+  animation-play-state: paused;
+}
+
+#bolt3 {
+  animation-name: changeopacity;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+  animation-duration: 0.4s;
+  animation-delay: 3s;
+  animation-play-state: paused;
+}
+
+#stage:hover .bolt {
+  animation-play-state: running;
+}
+
