@@ -62,7 +62,7 @@ h1 {
   width: 750px;
   height: 400px;
   
-  transition: left 1.5s 2s, opacity 2s 8s;
+  transition: left 1.5s 4s, opacity 2s 10s;
 }
 
 h2 {
@@ -74,7 +74,7 @@ h2 {
   height: 400px;
   opacity: 0;
   
-  transition: opacity 3s 11s;
+  transition: opacity 3s 15s;
  }
 
 #cloud.icon {
@@ -85,7 +85,7 @@ h2 {
   top: 100px;
   opacity: 1;
   
-  transition: left 1.5s 2s, opacity 2s 8s;
+  transition: left 1.5s 6s, opacity 2s 13s;
 }
 
 #gdrive {
@@ -96,7 +96,7 @@ h2 {
   top: 100px;
   opacity: 1;
   
-  transition: left 1.5s 2s, transform 2s 10s;
+  transition: left 1.5s 6s, transform 2s 15s;
 }
 
 #server.icon {
@@ -107,7 +107,7 @@ h2 {
   top: 100px;
   opacity: 1;
   
-  transition: left 1.5s 2s, opacity 2s 8s;
+  transition: left 1.5s 6s, opacity 2s 13s;
 }
 
 #laptop.icon {
@@ -124,7 +124,7 @@ h2 {
   position: absolute;
   left: 585px;
   top: 370px;
-  transition: opacity 1s 7s;
+  transition: opacity 1s 14s;
 }
 
 #file.icon {
@@ -133,7 +133,7 @@ h2 {
   position: absolute;
   left: 80px;
   top: 375px;
-  transition: opacity 1s 7s;
+  transition: opacity 1s 11.5s;
 }
 
 #bolt1.icon {
@@ -141,7 +141,6 @@ h2 {
   left: 400px;
   top: 150px;
   opacity: 0;
-  transition: opacity 0.5s 4s;
 }
 
 #bolt2.icon {
@@ -149,7 +148,6 @@ h2 {
   left: 450px;
   top: 165px;
   opacity: 0;
-  transition: opacity 0.5s 3.5s;
 }
 
 #bolt3.icon {
@@ -157,7 +155,6 @@ h2 {
   left: 500px;
   top: 180px;
   opacity: 0;
-  transition: opacity 0.5s 3s;
 }
 
 #doc1.icon {
@@ -165,77 +162,77 @@ h2 {
   left: 100px;
   top: 375px;
   opacity: 1;
-  transition: opacity 1s 4.5s, left 0.5s 0.5s, top 0.5s 0.5s;
+  transition: opacity 1s 8s, left 0.5s 0.25s, top 0.5s 0.25s;
 }
 
 #doc2.icon {
   position: absolute;
   left: 100px;
   top: 375px;
-  transition: opacity 1s 5s, left 0.5s 1s, top 0.5s 1s;
+  transition: opacity 1s 8.5s, left 0.5s 0.5s, top 0.5s 0.5s;
 }
 
 #doc3.icon {
   position: absolute;
   left: 100px;
   top: 375px;
-  transition: opacity 1s 5.5s, left 0.5s 1.5s, top 0.5s 1.5s;
+  transition: opacity 1s 9s, left 0.5s 0.75s, top 0.5s 0.75s;
 }
 
 #doc4.icon {
   position: absolute;
   left: 100px;
   top: 375px;
-  transition: opacity 1s 6s, left 0.5s 2s, top 0.5s 2s;
+  transition: opacity 1s 9.5s, left 0.5s 1s, top 0.5s 1s;
 }
 
 #floppy.icon {
   position: absolute;
   left: 600px;
   top: 375px;
-  transition: opacity 1s 5s, left 0.5s 2s;
+  transition: opacity 1s 13.5s, left 0.5s 5.25s;
 }
 
 #music.icon {
   position: absolute;
   left: 200px;
   top: 300px;
-  transition: opacity 1s 4.5s, left 0.7s 1.5s;
+  transition: opacity 1s 10.5s, left 0.7s 2.5s;
 }
 
 #movie.icon {
   position: absolute;
   left: 200px;
   top: 300px;
-  transition: opacity 1s 5s, left 0.7s 2s;
+  transition: opacity 1s 10s, left 0.7s 3s;
 }
 
 #drive.icon {
   position: absolute;
   left: 200px;
   top: 300px;
-  transition: opacity 1s 6s;
+  transition: opacity 1s 11s;
 }
 
 #picture1.icon {
   position: absolute;
   left: 600px;
   top: 375px;
-  transition: opacity 1s 5s, left 0.5s 1.25s;
+  transition: opacity 1s 12.5s, left 0.5s 4.75s;
 }
 
 #picture2.icon {
   position: absolute;
   left: 600px;
   top: 375px;
-  transition: opacity 1s 5.5s, left 0.5s 0.75s;
+  transition: opacity 1s 12s, left 0.5s 4.5s;
 }
 
 #picture3.icon {
   position: absolute;
   left: 600px;
   top: 375px;
-  transition: opacity 1s 6s, left 0.5s 1.75s;
+  transition: opacity 1s 13s, left 0.5s 5s;
 }
 
 #smile.icon {
@@ -243,7 +240,7 @@ h2 {
   left: 620px;
   top: 220px;
   opacity: 0;
-  transition: opacity 2s 4s;
+  transition: opacity 2s 8s;
 }
 
 #face.icon {
@@ -251,7 +248,7 @@ h2 {
   left: 620px;
   top: 220px;
   opacity: 1;
-  transition: opacity 2s 4s;
+  transition: opacity 2s 8s;
 }
 
 #light.icon {
@@ -261,7 +258,7 @@ h2 {
   left: 635px;
   top: 160px;
   visibility: hidden;
-  transition: visibility 1s 1s, opacity 1s 3s;
+  transition: visibility 1s 2s, opacity 1s 7s;
 }
 
 /* last */
@@ -387,31 +384,24 @@ h2 {
   }
 }
 
-#bolt1 {
+.bolt {
   animation-name: changeopacity;
-  animation-iteration-count: 10;
+  animation-iteration-count: 14;
   animation-direction: alternate;
   animation-duration: 0.4s;
-  animation-delay: 4s;
   animation-play-state: paused;
+}
+
+#bolt1 {
+  animation-delay: 8.5s;
 }
 
 #bolt2 {
-  animation-name: changeopacity;
-  animation-iteration-count: 10;
-  animation-direction: alternate;
-  animation-duration: 0.4s;
-  animation-delay: 3.5s;
-  animation-play-state: paused;
+  animation-delay: 8s;
 }
 
 #bolt3 {
-  animation-name: changeopacity;
-  animation-iteration-count: 10;
-  animation-direction: alternate;
-  animation-duration: 0.4s;
-  animation-delay: 3s;
-  animation-play-state: paused;
+  animation-delay: 7.5s;
 }
 
 #stage:hover .bolt {
@@ -419,7 +409,7 @@ h2 {
 }
 
 #gdrive.moveme {
-  animation: flip 2s;
+  animation: flip 3s;
 }
 
 
