@@ -1,5 +1,5 @@
-# Web 2 Starter
-Winter 2019 Web 2 Starter. Our DIY framework.
+# Google Doodle
+Winter 2019 EWU Web 2 Google Doodle project.
 
 ## Dependencies
 * [Normalize CSS](https://necolas.github.io/normalize.css/)
